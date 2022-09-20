@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@500&display=swap');
+
+body{
+    background-color: #489FB5;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #16697A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px;
+}
+
+img {
+    margin: 25px;
+}
+
+h1 {
+    font-family: "Roboto", "Arial", "Helvetica";
+    color: white;
+    font-size: 3em;
+    margin: auto;
+}
+
+main {
+    background-color: #EDE7E3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 25px;
+    margin: 20px 0px 20px 0px;
+}
+
+h2 {
+    font-family: "Joan", "Times New Roman", "Georgia";
+    color: #16697A;
+    margin-left: 25px;
+    border-bottom: #16697A;
+}
+
+footer {
+    background-color: #16697A;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-radius: 25px;
+    margin: 20px 0px 20px 0px;
+}
+
+#year, #lastModified {
+    font-family: "Roboto", "Arial", "Helvetica";
+    color: white;
+    grid-column: 2/4;
+}
