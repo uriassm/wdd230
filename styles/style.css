@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@500&display=swap'); */
 
 body{
     background-color: #489FB5;
@@ -16,7 +16,6 @@ header{
     background-color: #16697A;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 25px;
 }
 
 img {
@@ -26,7 +25,7 @@ img {
 h1 {
     font-family: "Roboto", "Arial", "Helvetica";
     color: white;
-    font-size: 3em;
+    font-size: 1em;
     margin: auto;
 }
 
@@ -34,7 +33,6 @@ main {
     background-color: #EDE7E3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 25px;
     margin: 20px 0px 20px 0px;
 }
 
@@ -49,12 +47,17 @@ footer {
     background-color: #16697A;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    border-radius: 25px;
     margin: 20px 0px 20px 0px;
+}
+
+#year {
+    border-bottom: solid;
+    border-color: white;
 }
 
 #year, #lastModified {
     font-family: "Roboto", "Arial", "Helvetica";
     color: white;
     grid-column: 2/4;
+    font-size: 16px;
 }

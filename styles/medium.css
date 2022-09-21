@@ -1,0 +1,18 @@
+@media (min-width: 32.5em) {
+    h1 {
+        font-size: 3em
+    }
+
+    #year {
+        border-bottom: none;
+    }
+
+    #year, #lastModified {
+        font-size: 22px;
+    }
+
+    header, main, footer {
+        border-radius: 25px;
+    }
+    
+}
