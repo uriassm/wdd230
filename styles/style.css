@@ -32,7 +32,7 @@ h1 {
 main {
     background-color: #EDE7E3;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: 20px 0px 20px 0px;
 }
 
@@ -41,6 +41,10 @@ h2 {
     color: #16697A;
     margin-left: 25px;
     border-bottom: #16697A;
+}
+
+li {
+    display: inline-block;
 }
 
 footer {

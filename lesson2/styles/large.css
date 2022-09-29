@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #dellWhiteSpace {
+        grid-column: 1/2;
+        margin: 25px;
+    }
+
+    #dellAlignment {
+        grid-column: 2/3;
+        margin: 25px;
+    }
+
+    #oracleContrast {
+        grid-column: 3/4;
+        margin: 25px;
+    }
+
+    header h1, header h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4, a {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #oracleContrast p{
+        margin-top: 65px;
+    }
+}
