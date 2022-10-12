@@ -1,0 +1,155 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0D67B5;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.logo {
+    width: 150%;
+}
+
+#socialMedia {
+    grid-column: 3/4;
+    margin: auto;
+}
+
+#fblogo {
+    width: 70%;
+}
+
+.date {
+    color: white;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* header h1 {
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+    color: white;
+    padding: 25px;
+    grid-column: 1/2;
+} */
+
+nav {
+    margin: auto;
+    grid-column: 4/5;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+nav ul.open {
+    display: block;
+    background-color: #330C2F;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    text-align: right;
+    grid-row: 1/3;
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+}
+
+nav ul li.active a {
+    background-color: #330C2F;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #0D67B5
+}
+
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+main {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    font-family: 'Lora', 'Times New Roman', 'Georgia';
+}
+
+section {
+    background-color: #CBF3D2;
+    padding: 10px;
+}
+
+#spotlight1, #spotlight2 {
+    border-style: solid;
+    border-color: #330C2F;
+    border-width: 1px;
+    height: auto;
+}
+
+footer {
+    background-color: #0D67B5;
+    margin: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logoFooter {
+    width: 50%;
+    margin: auto;
+}
+
+#address, #contact, #footerString {
+    text-align: center;
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+    font-size: 16px;
+}
+
+#locationMap {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+    font-size: 16px;
+}
+
+#footerString {
+    font-family: 'Open Sans', 'Arial', 'Helvetica';
+    font-size: 16px;
+}
