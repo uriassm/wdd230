@@ -1,5 +1,11 @@
 @media (min-width: 992px) {
 
+    .logo {
+        max-width: 400px;
+        grid-column: 2/4;
+        margin: 25px auto;
+    }
+
     nav {
         display: flex;
         justify-content:center;
@@ -87,6 +93,13 @@
         grid-column: 2/4;
     }
 
+    .home-title {
+        left: 600px;
+        top: 1000px;
+        color: #0D67B5;
+        font-size: 48px;
+    }
+
     #newsRelease {
         grid-row: 3/4;
         grid-column: 2/4;
@@ -95,6 +108,9 @@
     #spotlights {
         grid-row: 1/4;
         grid-column: 4/5;
+    }
+
+    #spotlightsFlex {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -113,9 +129,5 @@
     #join {
         grid-row: 3/4;
         grid-column: 1/2;
-    }
-
-    .logo {
-        max-width: 200px;
     }
 }

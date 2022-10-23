@@ -24,3 +24,14 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 );
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
+
+//Join banner on Mondays and Tuesdays
+let join = document.querySelector('.joinBanner');
+let day = now.getDay();
+
+if ((day == 1) || (day == 2)) {
+    join.textContent = 'Come join us for the Chamber meet and greet Wednesday at 7:00pm'
+}
+else {
+    join.textContent = ''
+}
