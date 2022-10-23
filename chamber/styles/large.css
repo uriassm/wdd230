@@ -94,7 +94,8 @@
     }
 
     .home-title {
-        left: 600px;
+        left: auto;
+        right: auto;
         top: 1000px;
         color: #0D67B5;
         font-size: 48px;
