@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="images/chamberLogo.png" alt="Chamber Logo">
+        <img class="logo" src="images/chamberLogoWP.webp" alt="Chamber Logo">
         <!-- <h1>East Los Angeles Chamber</h1> -->
         <span class="date"></span>
         <span class="joinBanner"></span>
@@ -38,7 +38,14 @@
         <div id="hero"> 
             <h2 class="home-title">Welcome to ELA</h2>
             <div id="hero-box">
-                <img id="hero-img" src="images/pexels-rodnae-productions-8782655.jpg" alt="City Image">
+                <picture id="hero-img">
+                    <source media="(min-width: 992px)" 
+                    srcset="images/wdd230-org-03.jpg">
+                    <source media="(min-width: 600px)"
+                    srcset="images/wdd230-org-02.jpg">
+                    <img src="images/wdd230-org-01.jpg" alt="Hero Image">
+                </picture>
+                <!-- <img id="hero-img" src="images/pexels-rodnae-productions-8782655.jpg" alt="City Image"> -->
             </div>
         </div>
         <section id="event">
@@ -54,8 +61,10 @@
             <h2>Weather</h2>
             <div id="weatherFlex">
                 <img src="images/icons8-partly-cloudy-day-96.png" alt="Partly Cloudy Icon">
-                <h3 id="temperature">20 &#8451;</h3>
+                <h3> <span id="temperature">40</span> &#8457;</h3>
             </div>
+            <p>Wind Speed: <span id="windSpeed">5.0</span> mph</p>
+            <p>Wind Chill: <span id="windChill"></span> &#8457;</p>
             <a target="_blank" href="https://icons8.com/icon/15359/partly-cloudy-day">Partly Cloudy Day</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </section>
         <section id="newsRelease">
@@ -98,12 +107,13 @@
         </section>
     </main>
     <footer>
-        <img class="logoFooter" src="images/chamberLogo.png" alt="Chamber Logo">
+        <img class="logoFooter" src="images/chamberLogoWP.webp" alt="Chamber Logo">
         <h2 id="address">555 Chamber St, Los Angeles, CA 55555</h2>
         <h2 id="contact">elachamber.org <br> 555-555-5555 <br> <a href="">Location Map</a></h2>
         <br>
         <span id="footerString"></span>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
