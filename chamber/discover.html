@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/chamberLogoWP.webp" alt="Chamber Logo">
+        <!-- <h1>East Los Angeles Chamber</h1> -->
+        <span class="date"></span>
+        <span class="joinBanner"></span>
+        <a id="socialMedia" href="https://facebook.com" target="_blank">
+            <img id="fblogo" src="images/facebook.png" alt="FB Logo">
+        </a>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="discoverImages">
+            <div id="discover1">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/small-pexels-noodles-5273331.jpg" alt="City Life">
+                </picture>
+                <p>Discover a city filled with life and new adventures.</p>
+            </div>
+            <div id="discover2">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/small-pexels-chitokan-c-2092507.jpg" alt="Latin Food">
+                </picture>
+                <p>Enjoy authentic latin cuisine in local restaurants.</p>
+            </div>
+            <div id="discover3">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/small-pexels-alena-darmel-8158282.jpg" alt="Spanish Culture">
+                </picture>
+                <p>Experience many spanish cultures that have made East LA home.</p>
+            </div>
+            <div id="discover4">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/small-pexels-sergio-souza-1782146.jpg" alt="City Events">
+                </picture>
+                <p>Find new events happening in the city throughout every season.</p>
+            </div>
+            <div id="discover5">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/small-pexels-agung-pandit-wiguna-1128317.jpg" alt="Family">
+                </picture>
+                <p>Be where family is the root of everything.</p>
+            </div>
+            <div id="discover6">
+                <picture>
+                    <img class="discoverImage" src="images/placeholder.webp" data-src="images/pexels-noé-villalta-photography-9216207.jpg" alt="Family">
+                </picture>
+                <p>Always supporting local businesses.</p>
+            </div>
+        </div>
+        <div id="demographic">
+            <h2>Demographic Information</h2>
+            <div id="demoInfo">
+                <div>
+                    <h3>Population</h3>
+                    <ul>
+                        <li>Total Population: 118,786</li>
+                        <li>Average Age: 35</li>
+                        <li>Languaes Spoken Other Than English: 85% Spanish</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Income</h3>
+                    <ul>
+                        <li>Median Household Income: $65,971</li>
+                        <li>Poverty: 16%</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Geographic</h3>
+                    <ul>
+                        <li>Land Area(mi²): 7.4 sq miles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="visits">
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </div>
+    </main>
+    <footer>
+        <img class="logoFooter" src="images/chamberLogoWP.webp" alt="Chamber Logo">
+        <h2 id="address">555 Chamber St, Los Angeles, CA 55555</h2>
+        <h2 id="contact">elachamber.org <br> 555-555-5555 <br> <a href="">Location Map</a></h2>
+        <br>
+        <span id="footerString"></span>
+    </footer>
+</body>
+</html>
