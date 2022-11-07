@@ -173,7 +173,7 @@
         grid-row: 2/3;
     }
 
-    #visits {
+    #daysSinceLastVisit {
         grid-column: 1/5;
         grid-row: 3/4;
         max-height: 100px;

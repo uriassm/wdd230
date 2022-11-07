@@ -125,7 +125,7 @@
         grid-row: 4/5;
     }
 
-    #visits {
+    #daysSinceLastVisit {
         grid-column: 1/4;
         grid-row: 5/6;
     }
