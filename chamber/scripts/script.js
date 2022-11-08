@@ -65,7 +65,8 @@ if ("IntersectionObserver" in window) {
     });
   }
 
-//******User Visits*******
+
+//******User Visits Discover Page*******
 
 // initialize display elements
 // const todayDisplay = document.querySelector(".today");
@@ -74,9 +75,9 @@ const daysDisplay = document.querySelector(".daysSince");
 
 let lastVisit = Number(window.localStorage.getItem("visitDays-ls"));
 
-currentTime = Date.now();
-daysPassedMS = currentTime - lastVisit;
-daysPassedDays = Math.floor(daysPassedMS / 86400000)
+let currentTime = Date.now();
+let daysPassedMS = currentTime - lastVisit;
+let daysPassedDays = Math.floor(daysPassedMS / 86400000)
 
 
 if (lastVisit != 0) {
@@ -85,7 +86,7 @@ if (lastVisit != 0) {
   daysDisplay.textContent = "This is your first visit!";
 }
 
-localStorage.setItem("visitDays-ls", currentTime)
+localStorage.setItem("visitDays-ls", currentTime);
 
 
 
@@ -105,3 +106,9 @@ localStorage.setItem("visitDays-ls", currentTime)
 // localStorage.setItem("visits-ls", numVisits);
 // show todays date.
 // todayDisplay.textContent = Date.now();
+
+
+// ************Current Time Submit Form****************
+
+let formTime = new Date();
+document.querySelector("#formDateTime").innerHTML = formTime;

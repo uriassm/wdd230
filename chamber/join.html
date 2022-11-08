@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/chamberLogoWP.webp" alt="Chamber Logo">
+        <!-- <h1>East Los Angeles Chamber</h1> -->
+        <span class="date"></span>
+        <span class="joinBanner"></span>
+        <a id="socialMedia" href="https://facebook.com" target="_blank">
+            <img id="fblogo" src="images/facebook.png" alt="FB Logo">
+        </a>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="joinHeading">Join the Chamber of East Los Angeles</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Position/Title <input type="text" name="title" pattern="[A-Za-z][-] \s .{7,}"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Business Name* <input type="text" name="businessName" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Selection</legend>
+                <div>Levels</div>
+                <label class="sbs"><input type="radio" name="level" value="beginner"> Nonprofit</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="level" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="level" value="gold"> Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Tell Us About Your Business</legend>
+                <label class="top" id="businessDescription">Business Description <textarea name="businessDescription" rows="10"></textarea></label>
+            </fieldset>
+            <label><input type="hidden" id="formDateTime" name="formDateTime"></label>
+
+            <input type="submit" value="Apply for Membership" class="submitBtn">
+        </form>
+        <div id="levelsExplained">
+            <h1>Membership Levels</h1>
+            <h2>Nonprofit $0/yr</h2>
+                <ul>
+                    <li>Access to Chamber and partner networking events</li>
+                    <li>Discounts on products and Chamber services</li>
+                    <li>Be listed under Chamber online business directory</li>
+                </ul>
+            <h2>Bronze $750/yr</h2>
+                <ul>
+                    <li>Invitations to VIP receptions and events</li>
+                    <li>Be featured on Chamber site and social media</li>
+                    <li>Participate in policy councils to guide Chamber's advocacy agenda</li>
+                </ul>
+            <h2>Silver $1,500/yr</h2>
+                <ul>
+                    <li>Waive processing fees for membership</li>
+                    <li>Opportunity to present at Chamber council meetings</li>
+                    <li>Share significant milestones in weekly newsletter</li>
+                </ul>
+            <h2>Gold $3,000/yr</h2>
+                <ul>
+                    <li>Invitation to join Board of Directors through nomination</li>
+                    <li>Invitation to semi-annual economic forecast</li>
+                    <li>Chamber representation at legislative meetings</li>
+                </ul>
+        </div>
+    </main>
+    <footer>
+        <img class="logoFooter" src="images/chamberLogoWP.webp" alt="Chamber Logo">
+        <h2 id="address">555 Chamber St, Los Angeles, CA 55555</h2>
+        <h2 id="contact">elachamber.org <br> 555-555-5555 <br> <a href="">Location Map</a></h2>
+        <br>
+        <span id="footerString"></span>
+    </footer>
+</body>
+</html>

@@ -178,4 +178,21 @@
         grid-row: 3/4;
         max-height: 100px;
     }
+
+
+    /* ----------Join Page CSS ---------- */
+    #joinHeading {
+        grid-column: 2/4;
+    }
+
+    form {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #levelsExplained {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+
 }
