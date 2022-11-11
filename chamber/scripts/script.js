@@ -111,4 +111,5 @@ localStorage.setItem("visitDays-ls", currentTime);
 // ************Current Time Submit Form****************
 
 let formTime = new Date();
-document.querySelector("#formDateTime").innerHTML = formTime;
+let input = document.getElementById("#formDateTime");
+input.value = formTime;
