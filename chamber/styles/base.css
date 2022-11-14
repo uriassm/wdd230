@@ -296,3 +296,57 @@ form label.top input:required:valid {
 #thankyou {
     grid-column: 1/5;
 }
+
+
+/* ---------- Directory Page CSS ---------- */
+
+.menu {
+    margin: 10px;
+    text-align: center;
+}
+
+.cards h2 {
+    display: none;
+}
+
+.cards h3{
+    text-align: center;
+}
+
+div.cards{
+    background-color: white;
+}
+
+.cards section {
+    margin: 10px;
+    padding: 5px;
+    /* box-shadow: 5px 5px 10px black; */
+}
+
+.cards img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list h2, h3 {
+    text-align: center;
+}
+
+div.list {
+    background-color: white;
+}
+
+.list img{
+    display: none;
+}
+
+.list section {
+    margin: 10px;
+    padding: 5px;
+    /* box-shadow: 5px 5px 10px black; */
+}

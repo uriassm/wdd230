@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "name": "Fish Tacos",
+            "address": "555 Main Street",
+            "phonenumber": "555-256-6985",
+            "website": "fishtacos.net",
+            "image": "images/fishtacoslogo.png",
+            "membershiplevel": "Bronze"
+        },
+        {
+            "name": "Pets World",
+            "address": "1234 Prime Avenue",
+            "phonenumber": "555-134-2568",
+            "website": "petsworld.com",
+            "image": "images/petsworldlogo.png",
+            "membershiplevel": "Bronze"
+        },
+        {
+            "name": "Jose's Automotive",
+            "address": "9870 Delgado Street",
+            "phonenumber": "555-889-1177",
+            "website": "jaysauto.com",
+            "image": "images/josesautomotivelogo.png",
+            "membershiplevel": "Bronze"
+        },
+        {
+            "name": "La Molcajete",
+            "address": "251 Main Street",
+            "phonenumber": "555-989-2546",
+            "website": "molcajeterestaurant.com",
+            "image": "images/lamolcajetelogo.png",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "Goal Sports Goods",
+            "address": "997 Main Street",
+            "phonenumber": "555-646-7458",
+            "website": "gsp.com",
+            "image": "images/goalsportsgoodlogo.png",
+            "membershiplevel": "Silver"
+        },
+        {
+            "name": "City Contractors",
+            "address": "4568 Delgado Street",
+            "phonenumber": "555-858-9784",
+            "website": "citycontractors.com",
+            "image": "images/citycontractorslogo.png",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Philip Stern Legal Offices",
+            "address": "5854 Prime Avenue",
+            "phonenumber": "555-222-3333",
+            "website": "philipstern.com",
+            "image": "images/philipsternlegalofficeslogo.png",
+            "membershiplevel": "Gold"
+        },
+        {
+            "name": "Inside Meditation",
+            "address": "8789 Prime Avenue",
+            "phonenumber": "555-5858-6489",
+            "website": "insidemediation.com",
+            "image": "images/insidemeditationlogo.png",
+            "membershiplevel": "Nonprofit"
+        },
+        {
+            "name": "Family Resources",
+            "address": "1188 Main Street",
+            "phonenumber": "555-777-5858",
+            "website": "forfamily.com",
+            "image": "images/familyresourceslogo.png",
+            "membershiplevel": "Nonprofit"
+        }
+    ]
+}

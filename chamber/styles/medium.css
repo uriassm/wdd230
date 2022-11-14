@@ -84,7 +84,7 @@
         grid-column: 2/3;
     }
 
-    /* discover page CSS */
+    /*---------- discover page CSS ----------*/
 
     #discoverImages {
         grid-column: 1/4;
@@ -140,7 +140,7 @@
     }
 
 
-    /* Join Page CSS */
+    /*---------- Join Page CSS ----------*/
 
     #joinHeading {
         grid-column: 1/4;
@@ -156,6 +156,27 @@
     #businessDescription {
         display: flex;
         flex-direction: column;
+    }
+
+
+    /* ---------- Directory Page CSS ---------- */
+
+    .menu {
+        grid-column: 1/4;
+    }
+
+    div.cards {
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards img {
+        width: 40%;
+    }
+
+    div.list {
+        grid-column: 1/4;
     }
 
 }
