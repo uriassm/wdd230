@@ -1,0 +1,16 @@
+body {
+    background-color: #f9dbbd;
+}
+
+h1, p, h2, figure {
+    text-align: center;
+}
+
+h1 {
+    color: #a53860;
+    text-shadow: 2px 2px 5px;
+}
+
+h2 {
+    color: #a53860;
+}
