@@ -28,7 +28,7 @@ function displayProphets(prophet) {
 
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet + 1}`);
+    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}`);
     portrait.setAttribute('loading', 'lazy');
 
     // Add/append the section(card) with the h2 element
