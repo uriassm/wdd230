@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
+    <title>Contact</title>
     <link rel="shorcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,11 +36,28 @@
         </nav>
     </header>
     <main>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div id="contactInfo">
+            <h2>Contact Information</h2>
+            <p>Phone Number: 555-555-5555</p>
+            <p>Email: office@elachamber.org</p>
+            <p>Address: 4321 Main St, Los Angeles, CA 55555</p>
         </div>
-        <div class="cards"></div>
+        <form id="contactForm" method="get" action="response.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label class="top">Name* <input type="text" name="name" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label for="contactPreference" class="top">Choose Contact Preference</label>
+                <select name="contactPreference" id="contactPreference">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+                <label class="top">Question/Comment <textarea name="questionComment" id="questionComment" cols="30" rows="10"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Submit Question/Comment" class="submitBtn">
+        </form>
     </main>
     <footer>
         <img class="logoFooter" src="images/chamberLogoWP.webp" alt="Chamber Logo">

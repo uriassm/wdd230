@@ -11,11 +11,16 @@ header {
 }
 
 .logo {
-    width: 250%;
+    grid-column: 2/4;
+}
+
+.logo img {
+    width: 125%;
 }
 
 #socialMedia {
-    grid-column: 4/5;
+    grid-column: 3/4;
+    grid-row: 4/5;
     margin: auto;
 }
 
@@ -55,6 +60,7 @@ nav {
 
 #hamburgerBtn {
     grid-column: 4/5;
+    grid-row: 4/5;
     background: transparent;
     border: none;
     color: white;
@@ -162,10 +168,22 @@ section h3, section p {
     height: auto;
 }
 
+#spotlights img {
+    max-width: 250px;
+}
+
 .spotlightContact {
     border-top-style: solid;
     border-color: #0D67B5;
     padding-top: 10px;
+}
+
+#join h2 {
+    margin-bottom: 50px;
+}
+
+#join p {
+    margin-top: 50px;
 }
 
 .joinButton {
@@ -175,7 +193,7 @@ section h3, section p {
     background-color: #330C2F;
     color: white;
     padding: 10px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     font-size: 24px;
 }
 
@@ -211,6 +229,15 @@ footer {
     font-size: 16px;
 }
 
+/* ----------Discover Page ---------- */
+
+#discoverImages p {
+    max-width: 325px;
+}
+
+#demographic {
+    text-align: left;
+}
 
 /* ----------Join Page ---------- */
 
@@ -256,7 +283,7 @@ form label.sbs {
 
 form textarea {
     width: 100%;
-    max-width: 18rem;
+    /* max-width: 18rem; */
 }
 
 form input.submitBtn {
@@ -288,6 +315,10 @@ form label.top input:required {
 form label.top input:required:valid {
     border-bottom: #C9CC3F solid 4px;
 
+}
+
+#stickyLevels {
+    background-color: transparent;
 }
 
 
