@@ -26,7 +26,7 @@
         justify-content: center;
     }
 
-    #fblogo {
+    #fblogo, #twitterlogo {
         width: 50%;
     }
     
@@ -122,6 +122,14 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    #spotlight3 {
+        display: initial;
+    }
+
+    #spotlight1 img, #spotlight2 img, #spotlight3 img {
+        max-width: 175px;
     }
 
     #event {

@@ -22,9 +22,11 @@ header {
     grid-column: 3/4;
     grid-row: 4/5;
     margin: auto;
+    display: flex;
+    background-color: transparent;
 }
 
-#fblogo {
+#fblogo, #twitterlogo {
     width: 70%;
 }
 
@@ -161,7 +163,7 @@ section h3, section p {
     font-size: 36px;
 }
 
-#spotlight1, #spotlight2 {
+#spotlight1, #spotlight2, #spotlight3 {
     border-style: solid;
     border-color: #330C2F;
     border-width: 1px;
@@ -176,6 +178,14 @@ section h3, section p {
     border-top-style: solid;
     border-color: #0D67B5;
     padding-top: 10px;
+}
+
+#spotlight3 {
+    display: none;
+}
+
+#spotlight1 h3, #spotlight2 h3, #spotlight3 h3 {
+    text-align: left;
 }
 
 #join h2 {
