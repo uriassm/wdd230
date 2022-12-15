@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/fruit.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logoImg" src="images/bountifulLogoCropped.png" alt="Bountiful Logo"></a>
+        <div id="navBtn" onclick="toggleNav(this)">
+            <div class="navLine1"></div>
+            <div class="navLine2"></div>
+            <div class="navLine3"></div>
+        </div>
+        <nav id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Start Order</h1>
+        <form onsubmit="event.preventDefault()">
+            <fieldset>
+                <legend><strong>Enter Details</strong></legend>
+                <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top">Email* <input type="email" name="email" id="cstemail" placeholder="example@gmail.com" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" id="cstphone" placeholder="1234567890" required></label>
+                <label for="fruitOptions1" class="top">Choose Fruit*</label>
+                <select name="fruitOptions1" id="fruitOptions1"></select>
+                <label for="fruitOptions2" class="top">Choose Fruit*</label>
+                <select name="fruitOptions2" id="fruitOptions2"></select>
+                <label for="fruitOptions3" class="top">Choose Fruit*</label>
+                <select name="fruitOptions3" id="fruitOptions3"></select>
+                <label class="top">Add Special Instructions <textarea name="special Instructions" id="specialInstructions" cols="30" rows="10"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit Order" id="orderBtn" class="actionBtn">
+        </form>
+    </main>
+    <footer>
+        <span id="lastModified"></span>
+        <img src="images/placeholderimg.webp" data-src="images/fruitIcon.png" alt="Company Icon">
+    </footer>
+</body>
+</html>

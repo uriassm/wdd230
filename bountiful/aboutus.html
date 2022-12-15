@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logoImg" src="images/bountifulLogoCropped.png" alt="Bountiful Logo"></a>
+        <div id="navBtn" onclick="toggleNav(this)">
+            <div class="navLine1"></div>
+            <div class="navLine2"></div>
+            <div class="navLine3"></div>
+        </div>
+        <nav id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="companyHistory">
+            <h1>A History of Bountiful Foods</h1>
+            <p>When we started this company we had one goal in mind: Giving the best fruits
+                and produce to the people! We began with the local farms in Carlsbad and 
+                have reached out to more farmers producing quality foods. Our food trucks
+                quickly began to spread throughtout the state making it easier for customers
+                to purchase healthy foods. Our mission remains the same and we strive to bring
+                you the healthiest and most delicious produce products in the market. 
+            </p>
+        </section>
+        <section id="areaInformation">
+            <h1>Carlsbad, CA</h1>
+            <p>Our company keeps its headquarters in Carlsbad California. The city is known 
+                for many attractions including Legoland, Tamarack Surf Beach, and the Flower Fields.
+                As a city that is also rich in food options, we know from experience that people
+                can taste quality. Being in a community where we meet people from all walks of 
+                life has given us the insight to keep making the best food options for our 
+                customers.. 
+            </p>
+        </section>
+        <section id="contactInformation">
+            <h1>Contact Us</h1>
+            <p>Customer Service Number: 555-555-5555</p>
+            <p>Email: office@bountifulfoods.com</p>
+        </section>
+        <section id="map">
+            <h1>On the Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.88466366776!2d-117.35784215078083!3d33.12149995897076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1670999174139!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <span id="lastModified"></span>
+        <img src="images/placeholderimg.webp" data-src="images/fruitIcon.png" alt="Company Icon">
+    </footer>
+</body>
+</html>

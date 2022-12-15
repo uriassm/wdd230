@@ -1,0 +1,113 @@
+@media (min-width: 992px) {
+
+    #navBtn {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FB6107;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #callToAction {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #callToAction h1, #callToAction a, #callToAction p {
+        grid-column: 1/2;
+        justify-content: space-around;
+        justify-content: space-between;
+    }
+
+    #callToAction a {
+        font-size: 26pt;
+    }
+
+    #callToAction img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        margin: 5px;
+    }
+
+    #totalDrink {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    #coastalSummary {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    #weatherCard {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #socialMedia {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    #forecast3Days {
+        flex-direction: row;
+    }
+
+    #day1, #day2, #day3 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    /* ----------Fresh Page---------- */
+
+    form {
+        grid-column: 1/4;
+    }
+
+    #orderResults {
+        grid-column: 1/4;
+    }
+
+
+    /* ----------About Us Page---------- */
+
+
+
+    #areaInformation {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #map {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #contactInformation {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    #companyHistory {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+}

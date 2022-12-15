@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shorcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Pontano+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/getorders.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img class="logoImg" src="images/bountifulLogoCropped.png" alt="Bountiful Logo"></a>
+        <div id="navBtn" onclick="toggleNav(this)">
+            <div class="navLine1"></div>
+            <div class="navLine2"></div>
+            <div class="navLine3"></div>
+        </div>
+        <nav id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="coastalSummary">
+            <h1>Santa Monica Pier</h1>
+            <img id="smPier" src="images/placeholderimg.webp" data-src="images/pexels-sergey-korolev-13210679.jpg" alt="Santa Monica Photo">
+            <p>Southern California is well known for beaches and warm weather.
+                One of the most iconic that you will find is at Santa Monica Pier. 
+                With rides, food, and entertainment you will find the hours go by
+                near a sun setting in the beach. Find your next destination in the
+                many beaches found on the coast, and don't forget to stop by Bountiful
+                Foods to keep you going with a sweet and healthy fruit drink!
+            </p>
+        </section>
+        <section id="callToAction">
+            <h1>Order a Fruit Drink</h1>
+            <a class="actionBtn" href="fresh.html">Start Order</a>
+            <p>With so much good fruit to choose from, you can't go wrong! Get
+                your drink today!
+            </p>
+            <img src="images/placeholderimg.webp" data-src="images/pexels-kindel-media-8181553.jpg" alt="Fruit Drinks">
+        </section>
+        <section id="totalDrink">
+            <h1>Your Total Orders</h1>
+            <span id="drinksOrdered"></span>
+        </section>
+        <section id="weatherCard">
+            <h1>Carlsbad Weather</h1>
+            <img id="weatherIcon" src="images/placeholderimg.webp" alt="Weather Icon">
+            <p><span id="temperature"></span> </p>
+            <p><span id="condition"></span></p>
+            <p><span id="humidity"></span></p>
+            <h2>3 Day Forecast</h2>
+            <div id="forecast3Days">
+                <div id="day1">
+                    <span id="dayName1"></span>
+                    <img id="dayIcon1" src="images/placeholderimg.webp" alt="Weather Icon">
+                    <span id="forecast1"></span>
+                </div>
+                <div id="day2">
+                    <span id="dayName2"></span>
+                    <img id="dayIcon2" src="images/placeholderimg.webp" alt="Weather Icon">
+                    <span id="forecast2"></span>
+                </div>
+                <div id="day3">
+                    <span id="dayName3"></span>
+                    <img id="dayIcon3" src="images/placeholderimg.webp" alt="Weather Icon">
+                    <span id="forecast3"></span>
+                </div>
+            </div>
+            <p>Weather provided by <a href="https://openweathermap.org/city/5344994">OpenWeatherMap</a></p>
+        </section>
+        <section id="socialMedia">
+            <h1>Follow Us For More Bountiful Treats!</h1>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/placeholderimg.webp" data-src="images/facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/placeholderimg.webp" data-src="images/twitter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/placeholderimg.webp" data-src="images/instagramIcon.png" alt="Instagram Logo">
+            </a>
+        </section>
+    </main>
+    <footer>
+        <span id="lastModified"></span>
+        <img src="images/placeholderimg.webp" data-src="images/fruitIcon.png" alt="Company Icon">
+    </footer>
+</body>
+</html>

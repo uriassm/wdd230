@@ -1,0 +1,222 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: 'Handlee', 'Arial', 'Helvetica';
+}
+
+p {
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+}
+
+header {
+    /* background-color: #82b04d; */
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo {
+    background-color: #82b04d;
+}
+
+.logoImg {
+    width: 100%;
+}
+
+#navBtn {
+    display: inline-block;
+    background-color: #FB6107;
+    width: 100%;
+}
+
+.navLine1, .navLine2, .navLine3 {
+    width: 35px;
+    height: 5px;
+    margin: 6px;
+    margin-left: auto;
+    margin-right: 5px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.click .navLine1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.click .navLine2 {
+    opacity: 0;
+}
+
+.click .navLine3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul.open {
+    display: block;
+    background-color: #FB6107;
+}
+
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid white;
+    text-align: right;
+    font-family: 'Handlee', 'Arial', 'Helvetica';
+}
+
+nav ul li.active a {
+    background-color: #FB6107;
+}
+
+nav ul li a:hover {
+    background-color: #82b04d
+}
+
+main {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+section {
+    background-color: #7CB518;
+    padding: 10px;
+}
+
+#smPier {
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.actionBtn {
+    text-decoration: none;
+    text-align: center;
+    background-color: #FB6107;
+    padding: 10px;
+    border: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.actionBtn:hover {
+    background-color: #82b04d;
+}
+
+#callToAction img {
+    width: 100%;
+    box-shadow: 5px 5px 5px black;
+}
+
+#socialMedia a {
+    text-decoration: none;
+    color: transparent;
+}
+
+#weatherCard img {
+    width: 30%;
+}
+
+#forecast3Days {
+    display: flex;
+    flex-direction: column;
+}
+
+#day1, #day2, #day3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 5px solid #FB6107;
+}
+
+#day1 img, #day2 img, #day3 img {
+    width: 30%;
+    margin: 0 auto;
+}
+
+#drinksOrdered {
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+}
+
+footer {
+    margin: 10px;
+    background-color: #82b04d;
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+    text-align: center;
+}
+
+
+/* ----------Fresh Page---------- */
+
+form fieldset {
+    margin: 2rem 0;
+    background-color: #7CB518;
+    border: 1px solid #FB6107;
+    border-radius: 10px;
+    padding: 2rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    color: black;
+    font-family: 'Handlee', 'Arial', 'Helvetica';
+    font-size: larger;
+}
+
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+}
+
+form select {
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+}
+
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 18rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form textarea {
+    width: 100%;
+}
+
+form label.top input:required {
+    border-bottom: red solid 4px;   
+}
+
+form label.top input:required:valid {
+    border-bottom: #C9CC3F solid 4px;
+}
+
+li {
+    font-family: 'Pontano Sans', 'Times New Roman', 'Georgia';
+}
+
+
+/* ----------About Us Page---------- */
+
+#map iframe {
+    width: 100%;
+}
